@@ -5,7 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\GroupsController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.BS\Solution.BS.csproj" />
+    <ProjectReference Include="..\Solution.DAL.EF\Solution.DAL.EF.csproj" />
+    <ProjectReference Include="..\Solution.DO\Solution.DO.csproj" />
   </ItemGroup>
 
 

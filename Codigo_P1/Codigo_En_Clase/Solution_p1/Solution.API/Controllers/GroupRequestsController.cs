@@ -39,7 +39,7 @@ namespace Solution.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<DataModels.GroupRequests>> GetGroupRequests(int id)
         {
-            var groupRequests = await _context.GroupRequests.FindAsync(id);
+            var groupRequests = await new BS.GroupRequests(_context).GetOneByIdInclude(id);
             //implementacion del automapper
             var mappaux = _mapper.Map<data.GroupRequests, DataModels.GroupRequests>(groupRequests);
             if (groupRequests == null)

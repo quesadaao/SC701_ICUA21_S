@@ -91,6 +91,8 @@ namespace Solution.API.Controllers
         [HttpPost]
         public async Task<ActionResult<DataModels.Groups>> PostGroups(DataModels.Groups groups)
         {
+            //
+
             var mappaux = _mapper.Map<DataModels.Groups, data.Groups>(groups);
 
             new BS.Group(_context).Insert(mappaux);

@@ -35,8 +35,15 @@ namespace Solution.DAL
 
         public void Insert(Groups t)
         {
-            _repo.Insert(t);
-            _repo.Commit();
+            try
+            {
+                _repo.Insert(t);
+                _repo.Commit();
+            }
+            catch (Exception ee)
+            {
+
+            }
         }
 
         public void Update(Groups t)

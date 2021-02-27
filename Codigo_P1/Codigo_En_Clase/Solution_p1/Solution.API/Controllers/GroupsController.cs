@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Solution.DAL.EF;
 using data = Solution.DO.Objects;
+using AutoMapper;
 
 namespace Solution.API.Controllers
 {
@@ -14,38 +15,48 @@ namespace Solution.API.Controllers
     public class GroupsController : ControllerBase
     {
         private readonly SolutionDBContext _context;
+        private readonly IMapper _mapper;
 
-        public GroupsController(SolutionDBContext context)
+        public GroupsController(SolutionDBContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Groups
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Groups>>> GetGroups()
+        public async Task<ActionResult<IEnumerable<DataModels.Groups>>> GetGroups()
         {
-            return new BS.Group(_context).GetAll().ToList();
+            // carga de datos
+            var aux = new BS.Group(_context).GetAll().ToList();
+
+            //implementacion del automapper
+            var mappaux = _mapper.Map<IEnumerable<data.Groups>, IEnumerable<DataModels.Groups>>(aux).ToList();
+            return mappaux.ToList();
         }
 
         // GET: api/Groups/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Groups>> GetGroups(int id)
+        public async Task<ActionResult<DataModels.Groups>> GetGroups(int id)
         {
             var groups = new BS.Group(_context).GetOneById(id);
 
-            if (groups == null)
+            //implementacion del automapper
+            var mappaux = _mapper.Map<data.Groups, DataModels.Groups>(groups);
+
+            if (mappaux == null)
             {
                 return NotFound();
             }
 
-            return groups;
+            return mappaux;
         }
 
         // PUT: api/Groups/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutGroups(int id, data.Groups groups)
+        public async Task<IActionResult> PutGroups(int id, DataModels.Groups groups)
         {
             if (id != groups.GroupId)
             {
@@ -54,7 +65,10 @@ namespace Solution.API.Controllers
 
             try
             {
-                new BS.Group(_context).Update(groups);
+                //implementacion del automapper
+                var mappaux = _mapper.Map<DataModels.Groups, data.Groups>(groups);
+
+                new BS.Group(_context).Update(mappaux);
             }
             catch (Exception ee)
             {
@@ -75,16 +89,18 @@ namespace Solution.API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Groups>> PostGroups(data.Groups groups)
+        public async Task<ActionResult<DataModels.Groups>> PostGroups(DataModels.Groups groups)
         {
-            new BS.Group(_context).Insert(groups);
+            var mappaux = _mapper.Map<DataModels.Groups, data.Groups>(groups);
+
+            new BS.Group(_context).Insert(mappaux);
 
             return CreatedAtAction("GetGroups", new { id = groups.GroupId }, groups);
         }
 
         // DELETE: api/Groups/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Groups>> DeleteGroups(int id)
+        public async Task<ActionResult<DataModels.Groups>> DeleteGroups(int id)
         {
             var groups = new BS.Group(_context).GetOneById(id);
             if (groups == null)
@@ -93,8 +109,9 @@ namespace Solution.API.Controllers
             }
 
             new BS.Group(_context).Delete(groups);
+            var mappaux = _mapper.Map<data.Groups, DataModels.Groups>(groups);
 
-            return groups;
+            return mappaux;
         }
 
         private bool GroupsExists(int id)

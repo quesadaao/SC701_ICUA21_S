@@ -17,7 +17,9 @@ namespace Solution.API.Mapping
             CreateMap<data.GroupInvitations, DataModels.GroupInvitations>().ReverseMap();
             CreateMap<data.GroupRequests, DataModels.GroupRequests>().ReverseMap();
 
-            //CreateMap<DataModels.GroupRequests, data.GroupRequests>();
+            CreateMap<data.GroupComments, DataModels.GroupComments>().ReverseMap();
+            CreateMap<data.GroupUpdates, DataModels.GroupUpdates>().ReverseMap();
+            CreateMap<data.GroupUpdateSupports, DataModels.GroupUpdateSupports>().ReverseMap();
         }
     }
 }

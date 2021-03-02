@@ -18,14 +18,16 @@ namespace Solution.DAL.EF
         public DbSet<GroupInvitations> GroupInvitations { get; set; }
         public DbSet<Groups> Groups { get; set; }
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-//                optionsBuilder.UseSqlServer("Server=SCIIV2;Database=SocialGoal;Trusted_Connection=True;");
-//            }
-//        }
+        public DbSet<GroupComments> GroupComments { get; set; }
+
+        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //        {
+        //            if (!optionsBuilder.IsConfigured)
+        //            {
+        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+        //                optionsBuilder.UseSqlServer("Server=SCIIV2;Database=SocialGoal;Trusted_Connection=True;");
+        //            }
+        //        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -99,6 +101,51 @@ namespace Solution.DAL.EF
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
                 entity.Property(e => e.GroupName).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<GroupComments>(entity =>
+            {
+                entity.HasKey(e => e.GroupCommentId)
+                    .HasName("PK_dbo.GroupComments");
+
+                entity.HasIndex(e => e.GroupUpdateId)
+                    .HasName("IX_GroupUpdateId");
+
+                entity.Property(e => e.CommentDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.GroupUpdate)
+                    .WithMany(p => p.GroupComments)
+                    .HasForeignKey(d => d.GroupUpdateId)
+                    .HasConstraintName("FK_dbo.GroupComments_dbo.GroupUpdates_GroupUpdateId");
+            });
+
+            modelBuilder.Entity<GroupUpdates>(entity =>
+            {
+                entity.HasKey(e => e.GroupUpdateId)
+                    .HasName("PK_dbo.GroupUpdates");
+
+                entity.HasIndex(e => e.GroupGoalId)
+                    .HasName("IX_GroupGoalId");
+
+                entity.Property(e => e.Status).HasColumnName("status");
+
+                entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<GroupUpdateSupports>(entity =>
+            {
+                entity.HasKey(e => e.GroupUpdateSupportId)
+                    .HasName("PK_dbo.GroupUpdateSupports");
+
+                entity.HasIndex(e => e.GroupUpdateId)
+                    .HasName("IX_GroupUpdateId");
+
+                entity.Property(e => e.UpdateSupportedDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.GroupUpdate)
+                    .WithMany(p => p.GroupUpdateSupports)
+                    .HasForeignKey(d => d.GroupUpdateId)
+                    .HasConstraintName("FK_dbo.GroupUpdateSupports_dbo.GroupUpdates_GroupUpdateId");
             });
 
             OnModelCreatingPartial(modelBuilder);

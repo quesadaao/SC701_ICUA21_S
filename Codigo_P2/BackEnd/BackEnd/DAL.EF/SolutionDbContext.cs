@@ -16,6 +16,10 @@ namespace DAL.EF
 
         public virtual DbSet<Orders> Orders { get; set; }
 
+        public virtual DbSet<Staffs> Staffs { get; set; }
+
+        public virtual DbSet<Stores> Stores { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            
@@ -121,7 +125,100 @@ namespace DAL.EF
                 //    .HasConstraintName("FK__orders__store_id__48CFD27E");
             });
 
-           
+            modelBuilder.Entity<Staffs>(entity =>
+            {
+                entity.HasKey(e => e.StaffId)
+                    .HasName("PK__staffs__1963DD9C916BE091");
+
+                entity.ToTable("staffs");
+
+                entity.HasIndex(e => e.Email)
+                    .HasName("UQ__staffs__AB6E6164D7539312")
+                    .IsUnique();
+
+                entity.Property(e => e.StaffId).HasColumnName("staff_id");
+
+                entity.Property(e => e.Active).HasColumnName("active");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasColumnName("email")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasColumnName("first_name")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasColumnName("last_name")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ManagerId).HasColumnName("manager_id");
+
+                entity.Property(e => e.Phone)
+                    .HasColumnName("phone")
+                    .HasMaxLength(25)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.StoreId).HasColumnName("store_id");
+
+                //entity.HasOne(d => d.Store)
+                //    .WithMany(p => p.Staffs)
+                //    .HasForeignKey(d => d.StoreId)
+                //    .HasConstraintName("FK__staffs__store_id__440B1D61");
+            });
+
+            modelBuilder.Entity<Stores>(entity =>
+            {
+                entity.HasKey(e => e.StoreId)
+                    .HasName("PK__stores__A2F2A30CEF7CA645");
+
+                entity.ToTable("stores");
+
+                entity.Property(e => e.StoreId).HasColumnName("store_id");
+
+                entity.Property(e => e.City)
+                    .HasColumnName("city")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Email)
+                    .HasColumnName("email")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Phone)
+                    .HasColumnName("phone")
+                    .HasMaxLength(25)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.State)
+                    .HasColumnName("state")
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.StoreName)
+                    .IsRequired()
+                    .HasColumnName("store_name")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Street)
+                    .HasColumnName("street")
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ZipCode)
+                    .HasColumnName("zip_code")
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+            });
+
             OnModelCreatingPartial(modelBuilder);
         }
 

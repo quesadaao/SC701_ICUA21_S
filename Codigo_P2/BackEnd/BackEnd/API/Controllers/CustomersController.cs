@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using data = DAL.DO.Objects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DAL.EF;
+using data = DAL.DO.Objects;
 using AutoMapper;
-//using datamodels = DAL.API.DataModels;
 
 namespace API.Controllers
 {
@@ -16,38 +15,48 @@ namespace API.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly SolutionDbContext _context;
+        private readonly IMapper _mapper;
 
-        public CustomersController(SolutionDbContext context)
+        public CustomersController(SolutionDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Customers
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<data.Customers>>> GetCustomers()
+        public async Task<ActionResult<IEnumerable<DataModels.Customer>>> GetCustomers()
         {
-            return new BS.Customers(_context).GetAll().ToList();
+            // carga de datos
+            var aux = new BS.Customers(_context).GetAll().ToList();
+
+            //implementacion del automapper
+            var mappaux = _mapper.Map<IEnumerable<data.Customers>, IEnumerable<DataModels.Customer>>(aux).ToList();
+            return mappaux.ToList();
         }
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<data.Customers>> GetCustomers(int id)
+        public async Task<ActionResult<DataModels.Customer>> GetCustomers(int id)
         {
             var customers = new BS.Customers(_context).GetOneById(id);
 
-            if (customers == null)
+            //implementacion del automapper
+            var mappaux = _mapper.Map<data.Customers, DataModels.Customer>(customers);
+
+            if (mappaux == null)
             {
                 return NotFound();
             }
 
-            return customers;
+            return mappaux;
         }
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCustomers(int id, data.Customers customers)
+        public async Task<IActionResult> PutCustomers(int id, DataModels.Customer customers)
         {
             if (id != customers.CustomerId)
             {
@@ -56,7 +65,10 @@ namespace API.Controllers
 
             try
             {
-                new BS.Customers(_context).Update(customers);
+                //implementacion del automapper
+                var mappaux = _mapper.Map<DataModels.Customer, data.Customers>(customers);
+
+                new BS.Customers(_context).Update(mappaux);
             }
             catch (Exception ee)
             {
@@ -77,16 +89,18 @@ namespace API.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<data.Customers>> PostCustomers(data.Customers customers)
+        public async Task<ActionResult<DataModels.Customer>> PostCustomers(DataModels.Customer customers)
         {
-            new BS.Customers(_context).Insert(customers);
+            var mappaux = _mapper.Map<DataModels.Customer, data.Customers>(customers);
+
+            new BS.Customers(_context).Insert(mappaux);
 
             return CreatedAtAction("GetCustomers", new { id = customers.CustomerId }, customers);
         }
 
         // DELETE: api/Customers/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<data.Customers>> DeleteCustomers(int id)
+        public async Task<ActionResult<DataModels.Customer>> DeleteCustomers(int id)
         {
             var customers = new BS.Customers(_context).GetOneById(id);
             if (customers == null)
@@ -95,8 +109,9 @@ namespace API.Controllers
             }
 
             new BS.Customers(_context).Delete(customers);
+            var mappaux = _mapper.Map<data.Customers, DataModels.Customer>(customers);
 
-            return customers;
+            return mappaux;
         }
 
         private bool CustomersExists(int id)

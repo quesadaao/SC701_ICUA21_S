@@ -22,8 +22,8 @@ namespace FrontEnd.API.Models
         public int StaffId { get; set; }
 
         public virtual Customers Customer { get; set; }
-        //public virtual Staffs Staff { get; set; }
-        //public virtual Stores Store { get; set; }
+        public virtual Staffs Staff { get; set; }
+        public virtual Stores Store { get; set; }
         //public virtual ICollection<OrderItems> OrderItems { get; set; }
     }
 }

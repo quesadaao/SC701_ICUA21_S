@@ -9,3 +9,14 @@ C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netc
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.dll
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.pdb
 C:\Repo\quesadaao\SC701_ICUA21_M\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.genruntimeconfig.cache
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\bin\Debug\netcoreapp3.1\DAL.DO.deps.json
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\bin\Debug\netcoreapp3.1\DAL.DO.runtimeconfig.json
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\bin\Debug\netcoreapp3.1\DAL.DO.runtimeconfig.dev.json
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\bin\Debug\netcoreapp3.1\DAL.DO.dll
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\bin\Debug\netcoreapp3.1\DAL.DO.pdb
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.AssemblyInfoInputs.cache
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.AssemblyInfo.cs
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.csproj.CoreCompileInputs.cache
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.dll
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.pdb
+C:\Repo\SC701_ICUA21_S\Codigo_P2\BackEnd\BackEnd\DAL.DO\obj\Debug\netcoreapp3.1\DAL.DO.genruntimeconfig.cache

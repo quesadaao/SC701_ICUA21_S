@@ -1,49 +1,47 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj": {}
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\API\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
               }
             }
           }
@@ -105,44 +103,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
         "projectName": "BS",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\BS\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
               }
             }
           }
@@ -193,30 +189,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj",
         "projectName": "DAL.DO",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -271,38 +265,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj",
         "projectName": "DAL.EF",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
               }
             }
           }
@@ -353,38 +345,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj",
         "projectName": "DAL.Repository",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
               }
             }
           }
@@ -435,44 +425,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
+    "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\obj\\",
+        "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
               },
-              "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
-                "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj"
+              "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj": {
+                "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.Repository\\DAL.Repository.csproj"
               }
             }
           }
@@ -523,7 +511,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

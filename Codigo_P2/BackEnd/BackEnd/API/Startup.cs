@@ -1,3 +1,5 @@
+using API.Mapping;
+using AutoMapper;
 using DAL.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +32,16 @@ namespace API
 
             services.AddControllers();
 
+            // Incializacion del automapper
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            }
+            );
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            // cierre de configuracion de automapper
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();

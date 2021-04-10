@@ -675,29 +675,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quesa\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\FrontEnd\\FrontEnd.API\\FrontEnd.API.csproj",
+      "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\FrontEnd\\FrontEnd.API\\FrontEnd.API.csproj",
       "projectName": "FrontEnd.API",
-      "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\FrontEnd\\FrontEnd.API\\FrontEnd.API.csproj",
-      "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_M\\Codigo_P2\\FrontEnd\\FrontEnd.API\\obj\\",
+      "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\FrontEnd\\FrontEnd.API\\FrontEnd.API.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\FrontEnd\\FrontEnd.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -743,7 +740,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

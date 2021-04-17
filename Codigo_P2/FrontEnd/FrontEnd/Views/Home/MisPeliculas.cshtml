@@ -1,0 +1,26 @@
+﻿@model List<FrontEnd.Models.Pelicula>
+
+@{
+    ViewData["Title"] = "Mis Peliculas";
+}
+
+<h2>Mis Peliculas</h2>
+<div>Monstrando @Model.Count() peliculas</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Genero</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pelicula in Model) {
+            var claseFila = (!pelicula.Cartelera) ? "danger" : String.Empty;
+        <tr class="@claseFila">
+            <th>@Html.Raw(pelicula.Titulo)</th>
+            <th>@pelicula.Genero</th>
+        </tr>
+        }
+    </tbody>
+</table>

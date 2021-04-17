@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Contact Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Variable 1 @ViewBag.Variable1</p>
+    <p>Variable 2 @ViewData["Variable2"]</p>
+    <p>Variable 3 @ViewBag.edad</p>
+    <p>Variable 4 @ViewBag.Fecha</p>
+
+
+    <form action="/Home/Contact" method="post">
+        <input type="number" id="edad" name="edad">
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>

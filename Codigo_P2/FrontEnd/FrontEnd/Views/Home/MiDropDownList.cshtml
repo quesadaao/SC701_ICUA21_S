@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Mi Drop Down List";
+
+}
+
+
+<h2>Mi Drop Down List</h2>
+
+<br/>
+
+<label>Opcion: </label>
+
+@Html.DropDownList("miDropDownList",(List<SelectListItem>)ViewBag.listado)
+
+@Html.Partial("_TasPartial")

@@ -5793,40 +5793,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\quesa\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
+      "projectUniqueName": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
       "projectName": "BS",
-      "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\obj\\",
+      "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\BS.csproj",
+      "packagesPath": "C:\\Users\\quesa\\.nuget\\packages\\",
+      "outputPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\BS\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
-              "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
+            "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj": {
+              "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.DO\\DAL.DO.csproj"
             },
-            "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
-              "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
+            "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj": {
+              "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL.EF\\DAL.EF.csproj"
             },
-            "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Repo\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
+            "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Repo\\quesadaao\\SC701_ICUA21_S\\Codigo_P2\\BackEnd\\BackEnd\\DAL\\DAL.csproj"
             }
           }
         }
@@ -5877,7 +5880,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }
